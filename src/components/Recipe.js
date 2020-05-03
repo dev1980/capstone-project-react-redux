@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
-import {connect} from 'react-redux';
+import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
 
 class Recipe extends Component {
-
+  recipes = this.props
   render() {
-    const recipe = this.props.recipes.find(el => el.strMeal === this.props.location.state.recipe);
+    const recipe = recipes.find(el => el.strMeal === this.props.location.state.recipe);
     const showRecipe = recipe ? (
       <div className="container">
         <div className="active-recipe">
