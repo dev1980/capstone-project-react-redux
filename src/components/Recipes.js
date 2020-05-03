@@ -1,4 +1,6 @@
-/* eslint-disable no-trailing-spaces, react/jsx-closing-tag-location, brace-style, arrow-body-style */
+/* eslint-disable no-trailing-spaces, brace-style, arrow-body-style */
+/* eslint-disable react/jsx-closing-tag-location */
+
 import React from 'react';
 import Proptypes from 'prop-types';
 import { Link } from 'react-router-dom';
