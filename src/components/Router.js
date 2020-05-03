@@ -1,4 +1,6 @@
-/*eslint no-trailing-spaces: [2, { "skipBlankLines": true }]*/
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable import/no-named-as-default */
+/* eslint-disable import/no-named-as-default-member */
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
