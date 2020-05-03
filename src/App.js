@@ -51,7 +51,7 @@ class App extends Component {
  
   render() {
     const { 
-      filter, recipes, changeFilter, categories 
+      filter, recipes, changeFilter, categories, 
     } = this.props;
     const filterRecipe = filter === 'All Categories'
       ? recipes
@@ -59,10 +59,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-        <h1 className="App-title">Recipe Search</h1>
-      </header> 
-        <CategoryFilter changeFilter={changeFilter} 
-        filter={filter} categories={categories} />
+          <h1 className="App-title">Recipe Search</h1>
+        </header> 
+        <CategoryFilter 
+          changeFilter={changeFilter} 
+          filter={filter} 
+          categories={categories} />
         <Recipes recipes={filterRecipe} />
       </div>
     );
