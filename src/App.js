@@ -8,7 +8,7 @@ import {addRecipes, addCategories, changeFilter} from './actions/index';
 import CategoryFilter from './components/CategoryFilter';
 
 class App extends Component {
-  getRandomAlphabet = ()=>{
+  getRandomAlphabet = () => {
     const alphabets = 'bcefghjklmnprstv'.split('');
     const randomNumber = Math.floor(Math.random() * 16);
     return alphabets[randomNumber];

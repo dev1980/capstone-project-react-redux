@@ -14,20 +14,22 @@ class Recipe extends Component {
           <img className="active-recipe__img" src={recipe.strMealThumb} alt={recipe.strMeal} />
           <h3 className="active-recipe__title">{recipe.strMeal}</h3>
           <h4 className="active-recipe__publisher">
-          Category:<span>{recipe.strCategory}</span>
+          Category:
+          <span>{recipe.strCategory}</span>
           </h4>
           <p className="active-recipe__website">
-          YouTube:<span><a href={recipe.strYoutube}>{recipe.strMeal}</a></span>
+          YouTube:
+          <span><a href={recipe.strYoutube}>{recipe.strMeal}</a></span>
           </p>
           <button className="active-recipe__button" type="button">
             <Link to="/">Go Home</Link>
           </button>
         </div>
-    </div>
+      </div>
     ) : <h4>Recipe Not Found</h4>
     return showRecipe;
-  }
-};
+  };
+}
 
 Recipe.propTypes = {
   recipes: PropTypes.instanceOf(Array).isRequired,
