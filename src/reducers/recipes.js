@@ -8,7 +8,7 @@ const recipeReducer = (state = [], actions) => {
       return actions.payload;
     default:
       return state;
-  };
+  }
 };
 
 export default recipeReducer;
