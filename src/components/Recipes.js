@@ -1,11 +1,12 @@
+/* eslint-disable no-trailing-spaces */
 import React from 'react';
 import Proptypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const Recipes = ({ recipes }) => (
-      <div className="container">
-        <div className="row">
-        {recipes.map(res =>{  
+  <div className="container">
+    <div className="row">
+      {recipes.map(res => {  
         return (
           <div key={res.idMeal} className="col-md-4" style={{ marginBottom:'2rem' }}>
           <div className="recipes__box">
