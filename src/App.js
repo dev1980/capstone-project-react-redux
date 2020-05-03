@@ -1,4 +1,4 @@
-/* eslint-disable no-trailing-spaces */
+/* eslint-disable no-trailing-spaces, quotes */
 import React, { Component } from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
@@ -50,10 +50,12 @@ class App extends Component {
   };
  
   render() {
-    const { filter, recipes, changeFilter, categories } = this.props;
+    const { 
+      filter, recipes, changeFilter, categories 
+    } = this.props;
     const filterRecipe = filter === 'All Categories'
       ? recipes
-    : recipes.filter(recipe => recipe.strCategory === filter);
+      : recipes.filter(recipe => recipe.strCategory === filter);
     return (
       <div className="App">
         <header className="App-header">
