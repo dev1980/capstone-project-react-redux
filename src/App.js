@@ -9,23 +9,24 @@ import CategoryFilter from './components/CategoryFilter';
 
 class App extends Component {
    getRandomAlphabet = () => {
-    const alphabets = 'bcefghjklmnprstv'.split('');
-    const randomNumber = Math.floor(Math.random() * 16);
-    return alphabets[randomNumber];
-  };
+     const alphabets = 'bcefghjklmnprstv'.split('');
+     const randomNumber = Math.floor(Math.random() * 16);
+     return alphabets[randomNumber];
+   };
   
    getRecipes = async () => {
      const randomAlphabet = this.getRandomAlphabet();
-    try {
-     const res = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${randomAlphabet}`);
-      const {meals} = await res.json();
-      return meals;
-    } catch (error) {
-      throw new Error(error.message);
-    }
-  };
+     try {
+       const res = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${randomAlphabet}`);
+       const { meals } = await res.json();
+       return meals;
+    }  catch (error) {
+        throw new Error(error.message);
+     }
+   };
+
    initialize = async props => {
-    const {
+     const {
       recipes, addCategories, addRecipes,
     } = props;
     try {
