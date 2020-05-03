@@ -1,7 +1,7 @@
+/* eslint-disable no-trailing-spaces */
 import React, { Component } from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
-
 import Recipes from './components/Recipes';
 import {connect} from 'react-redux';
 import {addRecipes, addCategories, changeFilter} from './actions/index';
@@ -59,28 +59,27 @@ class App extends Component {
       <header className="App-header">
       <h1 className="App-title">Recipe Search</h1>
       </header> 
-      <CategoryFilter changeFilter={this.props.changeFilter} filter={this.props.filter} categories={this.props.categories} />
-      <Recipes recipes = {filterRecipe} />
+      <CategoryFilter changeFilter={this.props.changeFilter} 
+        filter={this.props.filter} categories={this.props.categories} />
+        <Recipes recipes={filterRecipe} />
       </div>
     );
   }
 }
-const mapStateToProps=({recipes, categories, filter}) =>({
-  recipes, categories, filter
-})
-const mapDispatchToProps = dispatch =>({
-  addRecipes: (recipes) => dispatch(addRecipes(recipes)),
-  addCategories: (categories) => dispatch(addCategories(categories)),
-  changeFilter: (filter) => dispatch(changeFilter(filter)),
-})
+const mapStateToProps = ({ recipes, categories, filter }) => ({
+  recipes, categories, filter,
+});
+const mapDispatchToProps = dispatch => ({
+  addRecipes: recipes => dispatch(addRecipes(recipes)),
+  addCategories: categories => dispatch(addCategories(categories)),
+  changeFilter: filter => dispatch(changeFilter(filter)),
+});
 
 App.propTypes = {
   recipes: PropTypes.instanceOf(Array).isRequired,
   categories: PropTypes.instanceOf(Array).isRequired,
   filter: PropTypes.string.isRequired,
-  addRecipes: PropTypes.func.isRequired,
-  addCategories: PropTypes.func.isRequired,
-  changeFilter: PropTypes.func.isRequired
-}
+  changeFilter: PropTypes.func.isRequired,
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
