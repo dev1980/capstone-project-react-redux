@@ -7,9 +7,10 @@ const Recipes = ({ recipes }) => (
   <div className="container">
     <div className="row">
       {recipes.map(res => 
-        { return (
+      { 
+        return (
           <div key={res.idMeal} className="col-md-4" style={{ marginBottom: '2rem' }}>
-          <div className="recipes__box">
+            <div className="recipes__box">
               <img className="recipe__box-img" src={res.strMealThumb} alt={res.strMeal} />
               <div className="recipe__text">
                <h5 className="recipes__title">
