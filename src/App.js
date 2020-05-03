@@ -20,7 +20,7 @@ class App extends Component {
        const res = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${randomAlphabet}`);
        const { meals } = await res.json();
        return meals;
-     }catch (error) {
+     } catch (error) {
        throw new Error(error.message);
      }
    };
@@ -42,7 +42,7 @@ class App extends Component {
        addRecipes(myRecipes);
      } catch (error) {
        throw new Error(error.message);
-    }
+     }
    };
 
   componentDidMount = () => {
@@ -50,9 +50,10 @@ class App extends Component {
   };
  
   render() {
-    const filterRecipe = this.props.filter === 'All Categories'
-    ? this.props.recipes
-    : this.props.recipes.filter(recipe => recipe.strCategory === this.props.filter);
+    const{ filter, recipes } = this.props;
+    const filterRecipe = filter === 'All Categories'
+    ? recipes
+    : recipes.filter(recipe => recipe.strCategory === filter);
     return (
       <div className="App">
       <header className="App-header">
