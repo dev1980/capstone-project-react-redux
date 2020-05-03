@@ -19,10 +19,10 @@ const Recipes = ({ recipes }) => (
                 Publisher: 
                 <span>{res.strMeal }</span>
                 </p>
-              </div>
-              <button className="recipe_buttons" type="button">
-                <Link to={{ pathname: `/recipe/${res.idMeal}`, state: { recipe: res.strMeal }, }}>View Recipe</Link>
-              </button>
+             </div>
+            <button className="recipe_buttons" type="button">
+              <Link to={{ pathname: `/recipe/${res.idMeal}`, state: { recipe: res.strMeal }}}>View Recipe</Link>
+            </button>
           </div>
           </div>
         );
