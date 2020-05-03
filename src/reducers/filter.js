@@ -5,7 +5,7 @@ const { CHANGE_FILTER } = actions;
 const filterReducer = (state = 'All Categories', actions) => {
   switch (actions.type) {
     case CHANGE_FILTER:
-      return actions.payload
+      return actions.payload;
     default:
       return state;
   }

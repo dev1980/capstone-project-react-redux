@@ -5,7 +5,7 @@ const { ADD_RECIPES } = actions;
 const recipeReducer = (state = [], actions) => {
   switch (actions.type) {
     case ADD_RECIPES:
-      return actions.payload
+      return actions.payload;
     default:
       return state;
   }

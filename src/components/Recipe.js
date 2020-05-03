@@ -13,12 +13,10 @@ class Recipe extends Component {
         <div className="active-recipe">
           <img className="active-recipe__img" src={ recipe.strMealThumb } alt={ recipe.strMeal }/>
           <h3 className="active-recipe__title">{ recipe.strMeal }</h3>
-          <h4 className="active-recipe__publisher">
-          Category: 
-          <span>{ recipe.strCategory }</span>
+          <h4 className="active-recipe__publisher">Category: 
+            <span>{ recipe.strCategory }</span>
           </h4>
-          <p className="active-recipe__website">
-          YouTube: 
+          <p className="active-recipe__website">YouTube: 
             <span><a href={ recipe.strYoutube }>{ recipe.strMeal  }</a></span>
           </p>
           <button className="active-recipe__button">
