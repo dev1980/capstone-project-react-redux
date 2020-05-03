@@ -64,7 +64,8 @@ class App extends Component {
         <CategoryFilter 
           changeFilter={changeFilter} 
           filter={filter} 
-        categories={categories} />
+          categories={categories} 
+        />
         <Recipes recipes={filterRecipe} />
       </div>
     );
