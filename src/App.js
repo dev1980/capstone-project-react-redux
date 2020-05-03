@@ -46,21 +46,21 @@ class App extends Component {
    };
 
   componentDidMount = () => {
-    this.initialize(this.props)
+    this.initialize(this.props);
   };
  
   render() {
-    const{ filter, recipes } = this.props;
+    const { filter, recipes, changeFilter, categories } = this.props;
     const filterRecipe = filter === 'All Categories'
-    ? recipes
+      ? recipes
     : recipes.filter(recipe => recipe.strCategory === filter);
     return (
       <div className="App">
-      <header className="App-header">
-      <h1 className="App-title">Recipe Search</h1>
+        <header className="App-header">
+        <h1 className="App-title">Recipe Search</h1>
       </header> 
-      <CategoryFilter changeFilter={this.props.changeFilter} 
-        filter={this.props.filter} categories={this.props.categories} />
+        <CategoryFilter changeFilter={changeFilter} 
+        filter={filter} categories={categories} />
         <Recipes recipes={filterRecipe} />
       </div>
     );
