@@ -1,12 +1,12 @@
 import React from 'react';
-import Proptypes from 'prop-types'
-import { Link } from "react-router-dom";
+import Proptypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Recipes = ({ recipes }) => (
-  <div className="container">
+    <div className="container">
     <div className="row">
-    {recipes.map((res) => {
-      return (
+    {recipes.map(res =>{
+       return (
         <div key={res.idMeal} className="col-md-4" style={{ marginBottom:"2rem" }}>
           <div className="recipes__box">
             <img 
@@ -30,7 +30,7 @@ const Recipes = ({ recipes }) => (
           </div>
         </div>
       );
-    })}
+      })}
     </div>
   </div>
 );

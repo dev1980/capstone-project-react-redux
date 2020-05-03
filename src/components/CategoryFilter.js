@@ -4,7 +4,7 @@ import Proptypes from 'prop-types';
 
 const CategoryFilter = ({ changeFilter, categories, filter }) => (
   <select onChange={e => changeFilter(e.target.value)} className="header-select mb-4" value={filter}>
-  <option value= 'All Categories'>All Categories</option>
+    <option value="All Categories">All Categories</option>
     {categories.map(category => (
       <option key={`${category.strCategory}-option`} value={category.strCategory}>
         {category.strCategory}

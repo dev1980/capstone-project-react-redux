@@ -5,8 +5,9 @@ import PropTypes from 'prop-types';
 
 
 class Recipe extends Component {
-  recipes = this.props
+  
   render() {
+    const {recipes} = this.props
     const recipe = recipes.find(el => el.strMeal === this.props.location.state.recipe);
     const showRecipe = recipe ? (
       <div className="container">
