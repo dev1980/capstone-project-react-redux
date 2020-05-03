@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import Recipes from './components/Recipes';
 import {connect} from 'react-redux';
-import {addRecipes, addCategories, changeFilter} from './Actions/index';
+import {addRecipes, addCategories, changeFilter} from './actions/index';
 import CategoryFilter from './components/CategoryFilter';
 
 class App extends Component {
