@@ -2,13 +2,12 @@
 import React, { Component } from 'react';
 import './App.css';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import Recipes from './components/Recipes';
-import {connect} from 'react-redux';
-import {addRecipes, addCategories, changeFilter} from './actions/index';
+import { addRecipes, addCategories, changeFilter } from './actions/index';
 import CategoryFilter from './components/CategoryFilter';
 
 class App extends Component {
-
    getRandomAlphabet = () => {
     const alphabets = 'bcefghjklmnprstv'.split('');
     const randomNumber = Math.floor(Math.random() * 16);
