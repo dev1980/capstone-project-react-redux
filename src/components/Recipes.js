@@ -21,15 +21,12 @@ const Recipes = ({ recipes }) => (
                 </p>
               </div>
               <button className="recipe_buttons" type="button">
-                <Link to={{ 
-                  pathname: `/recipe/${res.idMeal}`,
-                  state: { recipe: res.strMeal },
-                }}>View Recipe</Link>
+                <Link to={{ pathname: `/recipe/${res.idMeal}`, state: { recipe: res.strMeal }, }}>View Recipe</Link>
               </button>
           </div>
-        </div>
-         );
-        })}
+          </div>
+        );
+      })}
     </div>
   </div>
 );
