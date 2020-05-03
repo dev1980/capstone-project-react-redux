@@ -32,11 +32,11 @@ const Recipes = ({ recipes }) => (
         </div>
       );
       })}
-    </div>
-  </div>
+     </div>
+   </div>
 );
 Recipes.propTypes = {
   recipes: Proptypes.instanceOf(Array).isRequired,
-}
+};
 
 export default Recipes;
