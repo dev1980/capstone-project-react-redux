@@ -1,5 +1,4 @@
-/* eslint-disable no-trailing-spaces */
-/* eslint-disable react/jsx-closing-tag-location, brace-style */
+/* eslint-disable no-trailing-spaces, react/jsx-closing-tag-location, brace-style, arrow-body-style */
 import React from 'react';
 import Proptypes from 'prop-types';
 import { Link } from 'react-router-dom';
@@ -15,7 +14,7 @@ const Recipes = ({ recipes }) => (
               <img className="recipe__box-img" src={res.strMealThumb} alt={res.strMeal} />
               <div className="recipe__text">
                 <h5 className="recipes__title">
-                 {res.strMeal.length < 20 ? `${res.strMeal}` : `${res.strMeal.substring(0, 25)}...`}
+                  {res.strMeal.length < 20 ? `${res.strMeal}` : `${res.strMeal.substring(0, 25)}...`}
                 </h5>
                 <p className="recipes__subtitle">
                 Publisher: 
@@ -23,7 +22,7 @@ const Recipes = ({ recipes }) => (
                 </p>
               </div>
               <button className="recipe_buttons" type="button">
-              <Link to={{ pathname: `/recipe/${res.idMeal}`, state: {recipe: res.strMeal} }}>View Recipe</Link>
+                <Link to={{ pathname: `/recipe/${res.idMeal}`, state: { recipe: res.strMeal } }}>View Recipe</Link>
               </button>
             </div>
           </div>
