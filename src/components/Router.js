@@ -9,12 +9,12 @@ import Recipe from './Recipe';
 
 const Router = () => (
   <Provider store={store}>
-  <BrowserRouter>
-  <Switch>
-  <Route exact path="/" component={App} />  
-  <Route path="/recipe/:id" component={Recipe} />  
-  </Switch>
-  </BrowserRouter>
+    <BrowserRouter>
+    <Switch>
+    <Route exact path="/" component={App} />  
+    <Route path="/recipe/:id" component={Recipe} />  
+    </Switch>
+    </BrowserRouter>
   </Provider>
 
 );

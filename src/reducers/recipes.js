@@ -1,14 +1,14 @@
-import {actions} from '../actions/index';
+import { actions } from '../actions/index';
 
 const { ADD_RECIPES } = actions;
 
 const recipeReducer = (state = [], actions) => {
-  switch(actions.type) {
+  switch (actions.type) {
     case ADD_RECIPES:
-    return actions.payload
+      return actions.payload
     default:
-      return state
-}
-}
+      return state;
+  }
+};
 
-export default recipeReducer
+export default recipeReducer;

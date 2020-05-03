@@ -1,4 +1,4 @@
-import {combineReducers} from 'redux';
+import { combineReducers } from 'redux';
 import recipes from './recipes';
 import categories from './categories';
 import filter from './filter';
@@ -6,7 +6,7 @@ import filter from './filter';
 const rootReducer = combineReducers({
   recipes,
   categories,
-  filter
-})
+  filter,
+});
 
 export default rootReducer;
