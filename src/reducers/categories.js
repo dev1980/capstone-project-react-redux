@@ -5,11 +5,10 @@ const { ADD_CATEGORIES } = actions;
 const categoriesReducer = (state = [], actions) => {
   switch (actions.type) {
     case ADD_CATEGORIES:
-      return actions.payload
+      return actions.payload;
     default:
-      return state
+      return state;
   }
 };
 
 export default categoriesReducer;
- 
