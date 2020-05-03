@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 const Recipes = ({ recipes }) => (
   <div className="container">
-      <div className="row">
-       {recipes.map(res => { 
+    <div className="row">
+        {recipes.map(res => { 
         return (
-        <div key={res.idMeal} className="col-md-4" style={{ marginBottom:"2rem" }}>
+          <div key = {res.idMeal} className="col-md-4" style= {{ marginBottom:'2rem' }}>
           <div className="recipes__box">
             <img className="recipe__box-img" src={res.strMealThumb} alt={res.strMeal} />
-              <div className="recipe__text">
+             <div className="recipe__text">
                 <h5 className="recipes__title">
                   {res.strMeal.length < 20 ? `${res.strMeal}` : `${res.strMeal.substring(0, 25)}...`}
                 </h5>
