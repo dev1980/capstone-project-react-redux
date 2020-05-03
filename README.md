@@ -20,8 +20,7 @@ A single page application built with react which fetches information about diffe
 
 ## Live Demo
 
-[Live Demo Link]()
-
+[Live Demo Link](https://capstone-react-redux-app.herokuapp.com/)
 ## Authors
 
 👤 **Brham Dev Mahato**
@@ -31,7 +30,6 @@ A single page application built with react which fetches information about diffe
 -   Linkedin: [linkedin](https://www.linkedin.com/in/dev1980/)
 -   <brham1980@gmail.com>
 -   <https://brhamresume.netlify.com/>
-
 
 ## 🤝 Contributing
 
