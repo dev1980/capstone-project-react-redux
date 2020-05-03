@@ -1,4 +1,5 @@
 /* eslint-disable no-trailing-spaces */
+/* eslint-disable react/jsx-closing-tag-location, brace-style */
 import React from 'react';
 import Proptypes from 'prop-types';
 import { Link } from 'react-router-dom';
@@ -23,7 +24,7 @@ const Recipes = ({ recipes }) => (
               </div>
               <button className="recipe_buttons" type="button">
               <Link to={{ pathname: `/recipe/${res.idMeal}`, state: {recipe: res.strMeal} }}>View Recipe</Link>
-            </button>
+              </button>
             </div>
           </div>
         );
