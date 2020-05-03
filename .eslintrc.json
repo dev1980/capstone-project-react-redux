@@ -13,7 +13,6 @@
     },
     "extends": ["airbnb", "plugin:react/recommended"],
     "plugins": ["react"],
-    "parser": "babel-eslint",
     "rules": {
       "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
       "import/no-unresolved": "off",
