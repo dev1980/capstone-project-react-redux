@@ -2,7 +2,7 @@ import { actions } from '../actions/index';
 
 const { CHANGE_FILTER } = actions;
 
-const filterReducer = (state = 'All Categories', actions) => {
+const filter = (state = 'All Categories', actions) => {
   switch (actions.type) {
     case CHANGE_FILTER:
       return actions.payload;
@@ -11,4 +11,4 @@ const filterReducer = (state = 'All Categories', actions) => {
   }
 };
 
-export default filterReducer;
+export default filter;

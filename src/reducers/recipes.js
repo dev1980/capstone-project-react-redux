@@ -2,7 +2,7 @@ import { actions } from '../actions/index';
 
 const { ADD_RECIPES } = actions;
 
-const recipeReducer = (state = [], actions) => {
+const recipe = (state = [], actions) => {
   switch (actions.type) {
     case ADD_RECIPES:
       return actions.payload;
@@ -11,4 +11,4 @@ const recipeReducer = (state = [], actions) => {
   }
 };
 
-export default recipeReducer;
+export default recipe;

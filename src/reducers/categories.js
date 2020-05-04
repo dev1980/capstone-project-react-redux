@@ -2,7 +2,7 @@ import { actions } from '../actions/index';
 
 const { ADD_CATEGORIES } = actions;
 
-const categoriesReducer = (state = [], actions) => {
+const categories = (state = [], actions) => {
   switch (actions.type) {
     case ADD_CATEGORIES:
       return actions.payload;
@@ -11,4 +11,4 @@ const categoriesReducer = (state = [], actions) => {
   }
 };
 
-export default categoriesReducer;
+export default categories;
