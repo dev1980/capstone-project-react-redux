@@ -6,22 +6,20 @@ A single page application built with react which fetches information about diffe
 
 <img src="public/screenshot.png" >
 
-## Technologies used
+#### Built With
 
-- ReactJS / Redux
-- HTML
-- CSS
-- React-dom
+- Create-react-app
+- Redux
+- React-Router
+- HTML / CSS
 
 ## Prerequisites
  - Git
+ - Yarn
  - Node.js
  - NPM
 
-## Live Demo
-
-[Live Demo Link](https://capstone-react-redux-app.herokuapp.com/)
-## Authors
+## Credit
 
 👤 **Brham Dev Mahato**
 
@@ -30,6 +28,21 @@ A single page application built with react which fetches information about diffe
 -   Linkedin: [linkedin](https://www.linkedin.com/in/dev1980/)
 -   <brham1980@gmail.com>
 -   <https://brhamresume.netlify.com/>
+
+## Getting Started
+
+- git clone https://github.com/dev1980/capstone-project-react-redux.git
+
+- cd React-Redux-Capstone
+
+- npm install
+
+- npm start
+
+## Live Demo
+
+[Live Demo Link](https://capstone-react-redux-app.herokuapp.com/)
+
 
 ## 🤝 Contributing
 
