@@ -1,6 +1,6 @@
 /* eslint-disable no-trailing-spaces, quotes */
 import React, { Component } from 'react';
-import './App.css';
+import '../src/scss/App.module.scss';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Recipes from './components/Recipes';
@@ -60,12 +60,13 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">Recipe Search</h1>
-        </header> 
+        
         <CategoryFilter 
           changeFilter={changeFilter} 
           filter={filter} 
           categories={categories} 
         />
+        </header> 
         <Recipes recipes={filterRecipe} />
       </div>
     );

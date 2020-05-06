@@ -10,18 +10,18 @@ class Recipe extends Component {
     const recipe = recipes.find(el => el.strMeal === location.state.recipe);
     const showRecipe = recipe ? (
       <div className="container">
-        <div className="active-recipe">
-          <img className="active-recipe__img" src={recipe.strMealThumb} alt={recipe.strMeal} />
-          <h3 className="active-recipe__title">{recipe.strMeal}</h3>
-          <h4 className="active-recipe__publisher">
+        <div className="active-recipe" style={{ marginTop: '40px' }}>
+          <img className="active-recipe-img" src={recipe.strMealThumb} alt={recipe.strMeal}  style={{ width: '350px' }} />
+          <h3 className="active-recipe-title">{recipe.strMeal}</h3>
+          <h4 className="active-recipe-publisher">
           Category:
             <span>{recipe.strCategory}</span>
           </h4>
-          <p className="active-recipe__website">
+          <p className="active-recipe-website">
           YouTube:
             <span><a href={recipe.strYoutube}>{recipe.strMeal}</a></span>
           </p>
-          <button className="active-recipe__button" type="button">
+          <button className="active-recipe-button" type="button">
             <Link to="/">Go Home</Link>
           </button>
         </div>

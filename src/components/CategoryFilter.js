@@ -1,9 +1,9 @@
 import React from 'react';
 import Proptypes from 'prop-types';
 
-
 const CategoryFilter = ({ changeFilter, categories, filter }) => (
-  <select onChange={e => changeFilter(e.target.value)} className="header-select mb-4" value={filter}>
+  <div className="select-category">
+  <select onChange={e => changeFilter(e.target.value)} className="header-select mb-5" value={filter}>
     <option value="All Categories">All Categories</option>
     {categories.map(category => (
       <option key={`${category.strCategory}-option`} value={category.strCategory}>
@@ -11,6 +11,7 @@ const CategoryFilter = ({ changeFilter, categories, filter }) => (
       </option>
     ))}
   </select>
+  </div>
 );
 
 CategoryFilter.propTypes = {
