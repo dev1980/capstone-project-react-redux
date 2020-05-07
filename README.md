@@ -67,7 +67,7 @@ A single page application built with react which fetches information about diffe
 
 - npm run test to run the test suites
 
-## Live Demo
+## Live Version
 
 [Live Demo Link](https://capstone-react-redux-app.herokuapp.com/)
 
