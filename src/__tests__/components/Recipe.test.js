@@ -30,7 +30,7 @@ describe('Meal Component', () => {
         state: {
           recipe: 'Peanut Butter Cookies',
         },
-      };
+      },
     }
     component = setup(props);
   });

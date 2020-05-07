@@ -12,7 +12,8 @@ const categories = ['One', 'Two', 'Three'];
 
 const setup = (props = {}) => {
   const component = shallow(
-    <CategoryFilter filter={props.filter} 
+    <CategoryFilter 
+      filter={props.filter} 
       categories={props.categories} 
       changeFilter={props.changeFilter} 
     />,
