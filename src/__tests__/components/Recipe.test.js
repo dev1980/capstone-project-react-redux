@@ -13,7 +13,9 @@ const recipes = [{
 }];
 
 const setup = (props = {}) => {
-  const component = shallow(<Recipe.WrappedComponent recipes={props.recipes} location={props.location} />);
+  const component = shallow(<Recipe.WrappedComponent recipes={props.recipes} 
+    location={props.location} 
+  />);
   return component;
 };
 
@@ -25,11 +27,10 @@ describe('Meal Component', () => {
       recipes,
       location: {
         state: {
-          recipe: 'Peanut Butter Cookies'
-        }
+          recipe: 'Peanut Butter Cookies',
+        },
       },
-    };
-
+    }
     component = setup(props);
   });
 

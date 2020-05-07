@@ -58,15 +58,15 @@ class App extends Component {
       : recipes.filter(recipe => recipe.strCategory === filter);
     return (
       <div className="App">
-          <header className="App-header">
+        <header className="App-header">
           <h1 className="App-title">Recipe Search</h1>
           <CategoryFilter 
           changeFilter={changeFilter} 
           filter={filter} 
           categories={categories} 
           />
-          </header> 
-          <Recipes recipes={filterRecipe} />
+        </header> 
+        <Recipes recipes={filterRecipe} />
       </div>
     );
   }

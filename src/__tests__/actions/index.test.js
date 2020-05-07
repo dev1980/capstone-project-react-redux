@@ -36,4 +36,3 @@ describe('addCategories', () => {
     expect(values).toEqual(['ADD_CATEGORIES', categories]);
   });
 });
-
