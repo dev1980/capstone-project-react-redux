@@ -1,16 +1,30 @@
 # capstone-project-react-redux
 
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
+
+* [About the Project](#about-the-project)
+  * [Built With](#built-with)
+  * [Prerequisites](#prerequisites)
+* [Credit](#credit)
+* [Screenshots](#screenshots)
+* [Usage](#usage)
+* [Live Version](#live-version)
+* [Testing](#testing)
+* [License](#license)
+
+
 ## About The Project
 
 A single page application built with react which fetches information about different meal recipes and displays them in a catalogue.
 
-<img src="public/screenshot.png" >
-
-#### Built With
+## Built With
 
 - Create-react-app
 - Redux
 - React-Router
+- Webpack
+- Babel
 - HTML / CSS
 
 ## Prerequisites
@@ -29,7 +43,11 @@ A single page application built with react which fetches information about diffe
 -   <brham1980@gmail.com>
 -   <https://brhamresume.netlify.com/>
 
-## Getting Started
+## Screenshots
+
+<img src="public/screenshot.png" >
+
+## Usage
 
 - git clone https://github.com/dev1980/capstone-project-react-redux.git
 
@@ -38,6 +56,16 @@ A single page application built with react which fetches information about diffe
 - npm install
 
 - npm start
+
+## Testing
+
+- git clone https://github.com/dev1980/capstone-project-react-redux.git
+
+- cd React-Redux-Capstone
+
+- npm install
+
+- npm run test to run the test suites
 
 ## Live Demo
 
