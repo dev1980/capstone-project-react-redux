@@ -1,7 +1,6 @@
 import { addCategories } from '../../redux/actions/index';
 import categories from '../../redux/reducers/categories';
 
-
 describe('Reducer Category', () => {
   it('should return default state', () => {
     const newState = categories(undefined, {});
@@ -15,4 +14,3 @@ describe('Reducer Category', () => {
     expect(newState.length).toEqual(3);
   });
 });
-

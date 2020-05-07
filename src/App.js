@@ -1,10 +1,10 @@
 /* eslint-disable no-trailing-spaces, quotes */
 import React, { Component } from 'react';
-import '../src/scss/App.module.scss';
+import './scss/App.module.scss';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Recipes from './components/Recipes';
-import { addRecipes, addCategories, changeFilter } from '../src/redux/actions/index';
+import { addRecipes, addCategories, changeFilter } from './redux/actions/index';
 import CategoryFilter from './components/CategoryFilter';
 
 class App extends Component {
@@ -58,15 +58,15 @@ class App extends Component {
       : recipes.filter(recipe => recipe.strCategory === filter);
     return (
       <div className="App">
-        <header className="App-header">
+          <header className="App-header">
           <h1 className="App-title">Recipe Search</h1>
           <CategoryFilter 
           changeFilter={changeFilter} 
           filter={filter} 
           categories={categories} 
-        />
-        </header> 
-        <Recipes recipes={filterRecipe} />
+          />
+          </header> 
+          <Recipes recipes={filterRecipe} />
       </div>
     );
   }

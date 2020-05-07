@@ -1,4 +1,4 @@
-import {changeFilter} from '../../redux/actions/index';
+import { changeFilter } from '../../redux/actions/index';
 import filterReducer from '../../redux/reducers/filter';
 
 describe('Reducer Category', () => {

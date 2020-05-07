@@ -11,7 +11,7 @@ class Recipe extends Component {
     const showRecipe = recipe ? (
       <div className="container">
         <div className="active-recipe" style={{ marginTop: '40px' }}>
-          <img className="active-recipe-img" src={recipe.strMealThumb} alt={recipe.strMeal}  style={{ width: '350px' }} />
+          <img className="active-recipe-img" src={recipe.strMealThumb} alt={recipe.strMeal} style={{ width: '350px' }} />
           <h3 className="active-recipe-title">{recipe.strMeal}</h3>
           <h4 className="active-recipe-publisher">
           Category:

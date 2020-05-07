@@ -1,4 +1,4 @@
-import {addRecipes} from '../../redux/actions/index';
+import { addRecipes } from '../../redux/actions/index';
 import recipeReducer from '../../redux/reducers/recipes';
 
 const recipe = [
