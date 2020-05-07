@@ -1,3 +1,4 @@
+/* eslint-disable no-trailing-spaces */
 import React from 'react';
 import { shallow } from 'enzyme';
 import CategoryFilter from '../../components/CategoryFilter';
@@ -11,8 +12,9 @@ const categories = ['One', 'Two', 'Three'];
 
 const setup = (props = {}) => {
   const component = shallow(
-    <CategoryFilter filter={props.filter} categories={props.categories} 
-    changeFilter={props.changeFilter} 
+    <CategoryFilter filter={props.filter} 
+      categories={props.categories} 
+      changeFilter={props.changeFilter} 
     />,
   );
   return component;

@@ -61,9 +61,9 @@ class App extends Component {
         <header className="App-header">
           <h1 className="App-title">Recipe Search</h1>
           <CategoryFilter 
-          changeFilter={changeFilter} 
-          filter={filter} 
-          categories={categories} 
+            changeFilter={changeFilter} 
+            filter={filter} 
+            categories={categories} 
           />
         </header> 
         <Recipes recipes={filterRecipe} />

@@ -1,3 +1,4 @@
+/* eslint-disable no-trailing-spaces */
 import React from 'react';
 import { shallow } from 'enzyme';
 import Recipe from '../../components/Recipe';
@@ -14,7 +15,7 @@ const recipes = [{
 
 const setup = (props = {}) => {
   const component = shallow(<Recipe.WrappedComponent recipes={props.recipes} 
-    location={props.location} 
+  location={props.location} 
   />);
   return component;
 };
@@ -29,7 +30,7 @@ describe('Meal Component', () => {
         state: {
           recipe: 'Peanut Butter Cookies',
         },
-      },
+      };
     }
     component = setup(props);
   });
@@ -37,6 +38,5 @@ describe('Meal Component', () => {
   it('should render without errors', () => {
     const element = testAttribute(component, '.container');
     expect(element.length).toEqual(1);
-
   });
 });
