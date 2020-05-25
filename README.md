@@ -71,6 +71,10 @@ A single page application built with react which fetches information about diffe
 
 [Live Demo Link](https://capstone-react-redux-app.herokuapp.com/)
 
+## Future Improvements
+
+- Implement sass for styling.
+- Display more data.
 
 ## 🤝 Contributing
 
