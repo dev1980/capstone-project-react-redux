@@ -1,5 +1,5 @@
 # capstone-project-react-redux
-A single page application built with react which fetches information about different meal recipes and displays them in a catalogue.
+A single page application built with react which fetches information about different meal recipes and displays them in a catalog.
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
@@ -16,7 +16,7 @@ A single page application built with react which fetches information about diffe
 
 ## About The Project
 
-A single page application built with react which fetches information about different meal recipes and displays them in a catalogue.
+A single page application built with react which fetches information about different meal recipes and displays them in a catalog.
 
 ## Built With
 
@@ -78,7 +78,7 @@ A single page application built with react which fetches information about diffe
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/dev1980/capstone-project-react-redux/issues)
 
